@@ -1,0 +1,566 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+/* prim & sec color */
+:root {
+  --primary-color: #1d3675;
+  --secondary-color: #f5b44f;
+}
+* {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/* navbar style */
+.navbar {
+  align-items: center;
+  z-index: 3;
+}
+.navbar-brand img {
+  width: 30px;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+}
+.nav-item {
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.nav-link:hover::after {
+  opacity: 1;
+}
+/* end navbar style */
+/* hero style */
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: url("img/hero bg.png");
+  background-position: center;
+  background-size: cover;
+}
+#hero h4,
+.hero-content,
+.hero-title {
+  z-index: 5;
+}
+#hero h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: -5px;
+}
+#hero .hero-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+#hero .hero-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+#hero .button-daftar {
+  width: 135px;
+  height: 45px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+#hero .button-daftar:hover {
+  background-color: #ad8037;
+}
+/* end hero style */
+/* sambutan style */
+#sambutan {
+  /* height: 100vh; */
+  width: 100%;
+}
+.title-page {
+  margin-top: 19px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+.nama-kepsek {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.sambutan-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+#sambutan p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+/* end sambutan style */
+/* profil */
+#profil {
+  /* height: 100vh; */
+  width: 100%;
+}
+.bookmark {
+  display: flex;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  width: 280px;
+  height: 70px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: default;
+  margin-bottom: 15px;
+}
+.bookmark:hover {
+  display: flex;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  width: 280px;
+  height: 70px;
+  overflow: hidden;
+  transform: scale(1.02);
+}
+.bi-bookmark {
+  color: #000;
+  font-size: 30px;
+  margin-right: 15px;
+  color: var(--secondary-color);
+}
+.profile-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  padding-top: 10px;
+}
+.profile-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.jurusan {
+  display: flex;
+}
+.jurusan i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: var(--secondary-color);
+}
+.jurusan p {
+  padding-top: 7px;
+}
+/* end profil style */
+/* ekskul style */
+#ekskul {
+  width: 100%;
+  /* height: 150vh; */
+}
+.card-ekskul {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 3px 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.card-ekskul:hover {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 3px 10px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+}
+.card-ekskul i {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+  margin-left: 6px;
+}
+.card-ekskul p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 12px;
+}
+.nama-eks {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #000000;
+}
+.text-eks {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.articel-ekskul {
+  margin-bottom: 25px;
+}
+.articel-ekskul a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.articel-ekskul a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+/* end ekskul style */
+/* kegiatan style */
+#kegiatan {
+  /* height: 100vh; */
+  width: 100%;
+}
+.kegiatan-img {
+  overflow-y: hidden;
+  position: relative;
+  width: 280px;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 280px;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+.img-overlay:hover {
+  opacity: 1;
+}
+.img-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.semi-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 47px;
+}
+/* end kegiatan style */
+/* kontak */
+#kontak {
+  height: 100;
+  width: 100%;
+}
+.kontak-sub-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.kontak-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 100px;
+}
+.teks-alamat {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding-top: 15px;
+}
+.alamat,
+.telephone,
+.email {
+  display: flex;
+  align-items: center;
+}
+.alamat img,
+.telephone img,
+.email img {
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+}
+.bi-telephone,
+.bi-geo-alt,
+.bi-envelope {
+  font-size: 33px;
+  color: var(--secondary-color);
+  margin-right: 20px;
+}
+.faq {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 45px;
+  color: #000000;
+  text-align: center;
+}
+.lokasi-maps-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin: 102px 0 31px 0;
+}
+.iframe-googlemaps {
+  border: 2px solid var(--primary-color);
+  margin-bottom: 10px;
+}
+/* end kontak style */
+/* pendaftaran style */
+#pendaftaran {
+  width: 100%;
+}
+.c-item {
+  height: 500px;
+}
+.c-item h5 {
+  overflow: hidden;
+  font-size: 2rem;
+}
+.c-item p {
+  font-size: 0.9rem;
+}
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.title-pendaftaran {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.sub-title-pendaftaran {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #646464;
+  margin-bottom: 15px;
+}
+.text-pendaftaran {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+/* end pendaftaran style */
+/* footer */
+#footer {
+  /* height: 363px; */
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.footer-brand {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.footer-list-icon {
+  display: flex;
+  margin-left: -30px;
+  flex-direction: row;
+}
+.footer-list-icon a {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 26px;
+  margin: 0 20px 0 0;
+}
+
+.bi-youtube:hover {
+  color: red;
+  transform: scale(1.1);
+}
+.bi-instagram:hover {
+  color: #f600ba;
+}
+.bi-whatsapp:hover {
+  color: greenyellow;
+}
+.bi-facebook:hover {
+  color: #0f90f3;
+}
+.footer-kontak {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.footer-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer-contact-icon {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 20px;
+}
+.footer-address p {
+  padding-top: 10px;
+}
+.footer-email p {
+  padding-top: 10px;
+}
+.footer-phone p {
+  padding-top: 10px;
+}
+/* end footer style */
+/* fasilitas */
+#fasilitas {
+  height: 100vh;
+  height: 100%;
+}
+#fasilitas .card {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding-top: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.3s;
+}
+#fasilitas .card:hover {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: default;
+}
+#fasilitas .card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+#fasilitas .card .icon-card {
+  border: 1px solid black;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-out;
+}
+#fasilitas .card .icon-card:hover {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+#fasilitas .card .icon-card i {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17px;
+  font-size: 35px;
+}
+.title-fasilitas {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.text-fasilitas {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+/* end fasilitas style */

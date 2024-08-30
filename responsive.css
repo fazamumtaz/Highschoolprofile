@@ -1,0 +1,59 @@
+@media screen and (max-width: 576px) {
+  #hero h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #hero h4 {
+    font-size: 18px;
+  }
+  #hero .hero-title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  #hero .button-daftar {
+    /* width: 130px;
+    height: 45px; */
+  }
+  .hero-content {
+    font-size: 1rem;
+    line-height: 23px;
+  }
+  #kegiatan .img-overlay {
+    display: none;
+  }
+  .title-page {
+    line-height: 40px;
+    font-size: 2rem;
+  }
+  #fasilitas .card {
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+  }
+  .c-item {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 922px) {
+  #hero .hero-content {
+    font-size: 18px;
+  }
+  #kegiatan .img-overlay {
+    display: none;
+  }
+  #profil .img-propil {
+    order: 3;
+  }
+  #profil .teks-profil {
+    order: 0;
+  }
+  #fasilitas .card {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .c-item {
+    height: 300px;
+  }
+}
